@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }}{% endblock %}
+
+
+
+
+{% block body %}
+
+    <section class="homeBackground">
+        <div class="Overlay">
+            <div class="Content">
+
+                <h1 class="text-center">Accueil</h1>
+                <div class="container">
+
+                        <div class="row justify-content-between">
+                            <div class="col-lg-5 col-s-2 col-m-6">
+                                <img class="homeimage col-lg-12  p-0" src="{{ asset('build/images/calvieragenda.jpg') }}"
+                                     alt="Office image">
+                            </div>
+
+                              </div>
+
+                </div>
+                <div class="container d-flex justify-content-center">
+                    <div class="row text-center">
+                        <p>Pour tout renseignement
+                            !</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-secondary btn-lg" href="#">Me contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
